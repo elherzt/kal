@@ -1,0 +1,55 @@
+.hero-section {
+   /* background: url('hero-image.jpg') center center/cover no-repeat; */
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section .container {
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.parallax-section {
+    position: relative;
+    background: url('parallax-image.jpg') fixed center center/cover no-repeat;
+    height: 100vh;
+}
+
+.parallax-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.parallax-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+.menu-section .btn {
+    font-size: 18px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+}
+
+.footer-section {
+    background: #333333;
+    color: white;
+}
