@@ -1,5 +1,5 @@
 .hero-section {
-   /* background: url('hero-image.jpg') center center/cover no-repeat; */
+    /* background: url('hero-image.jpg') center center/cover no-repeat; */
     height: 100vh;
     position: relative;
 }
@@ -52,4 +52,100 @@
 .footer-section {
     background: #333333;
     color: white;
+}
+
+/* Ajustes para el contenedor del visor PDF */
+#pdf-viewer {
+    max-width: 100%;
+    height: 60vh;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    /* Evitar desbordamientos */
+    display: flex;
+    justify-content: center;
+    /* Alinea horizontalmente el contenido */
+    align-items: center;
+    /* Alinea verticalmente el contenido */
+}
+
+/* Ajustes para el canvas generado por PDF.js */
+#pdf-viewer canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centra horizontalmente el canvas */
+}
+
+/* Ajustes generales para los botones */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-container button {
+    flex: 1 1 calc(33.33% - 10px);
+    /* Cada botón ocupa 1/3 del ancho por defecto */
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Estilo responsivo para pantallas grandes (PC) */
+@media (min-width: 1200px) {
+    .btn-container button {
+        flex: 1 1 calc(25% - 10px);
+        /* 4 botones por fila en pantallas grandes */
+    }
+}
+
+/* Estilo responsivo para pantallas medianas (Tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .btn-container button {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+
+    #pdf-viewer {
+        height: 40vh;
+        /* Reducir la altura en pantallas pequeñas */
+    }
+
+}
+
+/* Estilo responsivo para pantallas pequeñas (Celulares) */
+@media (max-width: 767px) {
+    .btn-container button {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+
+    #pdf-viewer {
+        height: 35vh;
+        /* Reducir aún más la altura en pantallas muy pequeñas */
+    }
+}
+
+/* Estilos para el visor PDF */
+#pdf-viewer {
+    max-width: 100%;
+    height: 60vh;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    /* Evitar desbordamientos */
+    display: flex;
+    justify-content: center;
+    /* Alinea horizontalmente el contenido */
+    align-items: center;
+    /* Alinea verticalmente el contenido */
+}
+
+/* Ajustes para el canvas generado por PDF.js */
+#pdf-viewer canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centra horizontalmente el canvas */
 }
